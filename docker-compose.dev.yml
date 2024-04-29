@@ -1,0 +1,16 @@
+version: "2.0"
+services:
+  spacedeck:
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: spacedeck
+    ports:
+      - "9666:9666"
+    volumes:
+      - ./storage:/app/storage
+      - ./database:/app/database
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
