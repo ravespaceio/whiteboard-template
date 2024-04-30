@@ -4,7 +4,7 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile.dev
-    container_name: spacedeck
+    container_name: rave-board
     ports:
       - "9666:9666"
     volumes:

@@ -2,7 +2,7 @@ version: "2.0"
 services:
   spacedeck:
     build: .
-    container_name: spacedeck
+    container_name: rave-board
     ports:
       - "9666:9666"
     volumes:
