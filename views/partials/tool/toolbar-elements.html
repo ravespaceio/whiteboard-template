@@ -70,18 +70,6 @@
       </div>
     </div>
 
-    <div class="dropdown top left light" v-bind:class="{open:opened_dialog=='zones'}">
-      <div class="btn-collapse in">
-        <button class="btn btn-transparent btn-icon-labeled" v-bind:class="{open:opened_dialog=='zones'}" v-on:click="open_dialog('zones')" title="<%=__("tool_zones")%>">
-          <span class="icon icon-zone"></span>
-          <span class="icon-label"><%=__("tool_zones")%></span>
-        </button>
-      </div>
-
-      <div class="dialog">
-        <%- include("./zones.html") %>
-      </div>
-    </div>
 
     <button class="btn btn-divider" v-show="logged_in"></button>
 
@@ -106,17 +94,9 @@
       <span class="icon-label"><%= __('share') %></span>
     </button>
 
-    <!--
-            <li v-on:click="edit_space_title()" v-if="logged_in">
-              <span>
-                <span class="icon icon-sm icon-tag"></span>
-                <span><%=  __('rename') %></span>
-              </span>
-            </li>
-            -->
-    <button class="btn btn-transparent btn-icon-labeled" title="Start Presentation (others follow what you see)" v-on:click="toggle_present_mode()" v-bind:class="{open:present_mode}">
+    <button class="btn btn-transparent btn-icon-labeled" title="export as pdf" v-on:click="download_space_as_pdf(active_space)" v-bind:class="{open:present_mode}" v-b>
       <span class="icon icon-presentation"></span>
-      <span class="icon-label"><%= __('present') %></span>
+      <span class="icon-label"><%= __('Export PDF') %></span>
     </button>
 
   </div>
