@@ -196,7 +196,7 @@
 	"tool_burst": "Burst",
 	"tool_star": "Star",
 	"tool_heart": "Heart",
-	"tool_scribble": "Scribble",
+	"tool_scribble": "Draw",
 	"tool_line": "Line",
 	"tool_arrow": "Arrow",
 	"tool_pan": "Pan",
@@ -330,5 +330,10 @@
 	"tool_space_help_part_one": "Use the toolbar to add content.",
 	"tool_space_help_part_two": "You can also drop images or sound and video files.",
 	"tool_delete_space": "Really delete \"%s\"?",
-	"Export PDF": "Export PDF"
+	"Export PDF": "Export PDF",
+	"Save as PDF": "Save as PDF",
+	"Save PDF": "Save PDF",
+	"Image": "Image",
+	"Background": "Background",
+	"background": "background"
 }

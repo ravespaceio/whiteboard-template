@@ -55,8 +55,8 @@
       <div class="btn-collapse in">
         <input type="file" multiple v-on:change="handle_image_file_upload($event)" id="image_file_upload" class="btn btn-transparent btn-icon-labeled" style="position: absolute; z-index: 1; opacity: 0;">
         <button class="btn btn-transparent btn-icon-labeled" title="<%=__("media")%>">
-          <span class="icon icon-upload"></span>
-          <span class="icon-label" ><%=__("media")%></span>
+          <span class="icon icon-picture-landscape"></span>
+          <span class="icon-label" ><%=__("Image")%></span>
         </button>
       </div>
     </div>
@@ -77,7 +77,7 @@
       <div class="btn-collapse in">
         <button class="btn btn-transparent btn-icon-labeled" v-bind:class="{open:opened_dialog=='background'}" v-on:click="open_dialog('background')" title="<%=__("tool_canvas")%>">
           <span class="letter">bg</span>
-          <span class="icon-label"><%=__("tool_canvas")%></span>
+          <span class="icon-label"><%=__("background")%></span>
         </button>
       </div>
 
@@ -95,8 +95,8 @@
     </button>
 
     <button class="btn btn-transparent btn-icon-labeled" title="export as pdf" v-on:click="download_space_as_pdf(active_space)" v-bind:class="{open:present_mode}" v-b>
-      <span class="icon icon-presentation"></span>
-      <span class="icon-label"><%= __('Export PDF') %></span>
+      <span class="icon icon-download"></span>
+      <span class="icon-label"><%= __('Save PDF') %></span>
     </button>
 
   </div>
