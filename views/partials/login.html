@@ -1,8 +1,4 @@
 <header id="landing-header" class="header" v-cloak v-if="(active_view == 'login' || active_view == 'signup' || active_view == 'password-reset' || active_view == 'password-confirm')">
-  <div class="header-left">
-    <a class="btn btn-transparent btn-nude" href="/"><img src="/images/sd6-logo-black.svg" width="190"></a>
-  </div>
-
   <div class="header-right pull-right">
     <a v-if="active_view != 'login'" class="btn btn-md btn-dark btn-round" href="/login"><%= __("login") %></a>
     <a v-if="active_view != 'signup'" class="btn btn-md btn-dark btn-round" href="/signup"><%= __("signup") %></a>

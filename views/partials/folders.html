@@ -1,8 +1,5 @@
 <header id="folder-header" class="header" v-if="(active_view == 'folders' && active_folder)" v-cloak>
   <div v-cloak class="header-left pull-left">
-    <a class="btn btn-dark btn-md btn-round btn-icon" href="/spaces">
-      <span class="icon icon-svg icon-sd6"></span>
-    </a>
     <button v-if="logged_in && (active_space_role == 'editor' || active_space_role == 'admin')" class="btn btn-dark btn-md btn-round" v-on:click="create_space('space')"><%= __('create_space') %></button>
     <button v-if="logged_in && (active_space_role == 'editor' || active_space_role == 'admin')" class="btn btn-stroke-darken btn-md btn-round" v-on:click="create_space('folder')">
       <span><%=  __('create_folder') %></span>
