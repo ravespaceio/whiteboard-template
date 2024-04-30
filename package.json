@@ -9,7 +9,7 @@
   },
   "nodemonConfig": {
     "legacyWatch": true,
-    "ext": "*" 
+    "ext": "ejs,js,scss,css,html"
   },
   "engines": {
     "node": ">=10.0.0"

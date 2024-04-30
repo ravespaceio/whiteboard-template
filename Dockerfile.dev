@@ -31,8 +31,6 @@ COPY . .
 # start app
 
 EXPOSE 9666
-# CMD ["node", "spacedeck.js"]
-# CMD ["nodemon", "spacedeck.js"]
 CMD ["npm", "run", "dev"]
 
 
