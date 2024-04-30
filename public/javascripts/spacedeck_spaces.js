@@ -81,7 +81,7 @@ var SpacedeckSpaces = {
       location.reload();
     },
     ask_guestname: function(dft, cb) {
-      smoke.prompt(__('what_is_your_name', "Spacedeck") , function(content) {
+      smoke.prompt(__('what_is_your_name', "RaveBoard") , function(content) {
         if (!content || (content.length === 0)) {
           this.ask_guestname(dft, cb);
         } else {
@@ -89,7 +89,7 @@ var SpacedeckSpaces = {
 
           if ("localStorage" in window && localStorage) {
             try {
-              localStorage['guest_nickname'] = this.guest_nickname;
+              // localStorage['guest_nickname'] = this.guest_nickname;
             } catch(e) {
               console.error(e);
             }
