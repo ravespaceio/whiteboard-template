@@ -5,7 +5,7 @@
   "host": "::",
   "port": 9666,
   "endpoint": "http://localhost:9666",
-  "invite_code": "top-sekrit",
+  "invite_code": "space123",
 
   "storage_dialect": "sqlite",
 
