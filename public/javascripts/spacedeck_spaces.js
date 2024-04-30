@@ -81,7 +81,7 @@ var SpacedeckSpaces = {
       location.reload();
     },
     ask_guestname: function(dft, cb) {
-      smoke.prompt(__('what_is_your_name', "white[ ]space") , function(content) {
+      smoke.prompt(__('what_is_your_name', "RaveBoard") , function(content) {
         if (!content || (content.length === 0)) {
           this.ask_guestname(dft, cb);
         } else {
